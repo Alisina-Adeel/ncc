@@ -13,7 +13,7 @@ export default function Footer2() {
 									<div className="widget">
 										<div className="textwidget">
 											<img id="a1" src="images/logo-footer.png" alt="images" />
-											<p>Welcome to our running community! Discover the joy of running, connect with fellow
+											<p>Welcome to our volleyball community! Discover the joy of running, connect with fellow
 												enthusiasts, and unlock your full potential with our expert resources and training
 												programs.
 											</p>

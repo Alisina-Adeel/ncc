@@ -22,19 +22,13 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
 			<nav id="mainnav-mobi" className={`mainnav style1 ${isMobileMenu ? 'active' : ''}`}>
 				<div id="logo-mobie" className="logo">
 					<a href="index.html" rel="home">
-						<img src="images/logo.png" alt="image" />
+						<img src="images/logo-.png" alt="image" />
 					</a>
 				</div>
 				<ul className="menu">
-					<li className={`${checkParentActive(["/homev2", "/homev3"])}`}>
-						<Link to="/#">Home page</Link>
-						<span className="btn-submenu" onClick={() => handleAccordion(1)} />
-						<ul className="submenu" style={{ display: `${isAccordion === 1 ? "block" : "none"}` }}>
-							<li className={`item ${checkCurrentMenuItem("/")}`}><Link to="/">Home V.1</Link></li>
-							<li className={`item ${checkCurrentMenuItem("/homev2")}`}><Link to="/homev2">Home V.2</Link></li>
-							<li className={`item ${checkCurrentMenuItem("/homev3")}`}><Link to="/homev3">Home V.3</Link></li>
-						</ul>{/* /.submenu */}
-					</li>
+					<li className={checkCurrentMenuItem("/")}>
+  <Link to="/">Home</Link>
+</li>
 					<li className={`item ${location.pathname === "/about" ? "current-menu-item" : ""}`}><Link to="/about">About us</Link></li>
 					<li className={`${checkParentActive(["/event", "/event-details"])}`}>
 						<Link to="/#">Our Events</Link>

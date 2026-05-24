@@ -18,11 +18,18 @@ export default function Menu() {
 		<>
 			<ul className="menu">
 				<li className={`${checkParentActive(["/homev2", "/homev3"])}`}>
-					<Link to="/#">Home page</Link>
+					
+					{/*
+					<Link to="/#">Home page</Link> 
+					*/}
+					<li className={`item ${checkCurrentMenuItem("/")}`}><Link to="/">Home</Link></li>
+					
 					<ul className="submenu">
-						<li className={`item ${checkCurrentMenuItem("/")}`}><Link to="/">Home V.1</Link></li>
+					{/*	<li className={`item ${checkCurrentMenuItem("/")}`}><Link to="/">Home</Link></li> */}
+						{/*
 						<li className={`item ${checkCurrentMenuItem("/homev2")}`}><Link to="/homev2">Home V.2</Link></li>
 						<li className={`item ${checkCurrentMenuItem("/homev3")}`}><Link to="/homev3">Home V.3</Link></li>
+						*/}
 					</ul>{/* /.submenu */}
 				</li>
 				<li className={`item ${location.pathname === "/about" ? "current-menu-item" : ""}`}><Link to="/about">About us</Link></li>
